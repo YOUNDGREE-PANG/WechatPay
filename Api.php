@@ -1,10 +1,11 @@
 <?php
 namespace app\api\controller;
+use app\common\controller\Api;
 session_set_cookie_params(7200); // 设置cookie有效期为1800秒（30分钟）
 session_start();
 
 
-class Index
+class Index extends Api
 {
       /**
      * 小程序获取手机号码
